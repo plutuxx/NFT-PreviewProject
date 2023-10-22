@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(font/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.container {
+    width: 265px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 14px;
+    box-shadow: 0px 34px 61px 7px rgba(0, 0, 0, 0.4);
+
+}
+
+.img-box {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    margin: 0 0 20px 0;
+    z-index: 1;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.view {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(178, 100%, 50%, 0.493);
+    border-radius: 7px;
+    z-index: 2;
+    opacity: 0;
+    transition-duration: .4s;
+}
+
+.view img {
+    opacity: 1;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+}
+
+.view:hover {
+    opacity: 1;
+}
+
+.info-box-p1 h4 {
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+.info-box-p1 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8398b5;
+}
+
+.info-box-p2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: hsl(181.34deg 92.75% 37.84%);
+}
+
+.price-box img {
+    width: 9px;
+    height: 16px;
+    margin: 0 6px 0 0;
+}
+
+.date-box {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 400;
+    color: hsl(214.62deg 50.65% 69.8%);
+}
+
+.date-box img {
+    width: 15px;
+    height: 15px;
+    margin: 0 6px 0 0;
+
+}
+
+.creator-info {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding: 15px 0 0 0;
+}
+
+.creator-info img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 15px 0 0;
+}
+
+.creator-info p {
+    color: #8398b5;
+    font-size: 12px;
+}
+
+.creator-info p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.creator-info p a:hover {
+    color: hsl(178.35deg 100% 50%);
+}
